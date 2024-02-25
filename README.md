@@ -99,7 +99,7 @@ Given the customer doesn't have connectivity
 ### Load Feed From Cache Use Case
 
 #### Primary course:
-1. Execute "Load Feed Items" command with above data.
+1. Execute "Load Image Feed" command with above data.
 2. System retrieves feed data from cache.
 3. System validates cache is less than seven days old.
 4. System creates image feed from cached data.
@@ -156,10 +156,10 @@ Given the customer doesn't have connectivity
 ### Cache Feed Use Case
 
 #### Data:
-- Feed Items
+- Image Feed
 
 #### Primary course (happy path):
-1. Execute "Save Feed Items" command with above data.
+1. Execute "Save Image Feed" command with above data.
 2. System deletes old cache data.
 3. System encodes image feed.
 4. System timestamps the new cache.
