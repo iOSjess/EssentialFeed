@@ -136,17 +136,8 @@ extension FeedStoreSpecs where Self: XCTestCase {
             deletionError = receivedDeletionError
             exp.fulfill()
         }
-        ///
-        /// Updated timeout to 2.0 seconds
-        /// It's an implementation detail of the file system.
-        /// We don't have access to the implementation code but it seems like it uses locks to avoid race conditions mutating the file
-        /// from different queues/threads. Depending on the queue, OS, and other environment details,
-        /// locks may be applied, slowing down the results.
-        ///
-        /// The other proposed solution was to use `.systemDomainMask` instead of `userDomainMask`
-        /// but that was for running on iOS simulatior
-        ///
-        wait(for: [exp], timeout: 2.0)
+
+        wait(for: [exp], timeout: 1.0)
         
         return deletionError
     }
