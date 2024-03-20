@@ -26,7 +26,7 @@
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="axK-fx-8bQ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="FeedImageCell" rowHeight="580" id="axK-fx-8bQ" customClass="FeedImageCell" customModule="Prototype" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="66" width="414" height="580"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="axK-fx-8bQ" id="c2D-TJ-8RK">
@@ -37,7 +37,7 @@
                                             <rect key="frame" x="20" y="17" width="374" height="546"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Raf-Gt-gj1" userLabel="Location Container">
-                                                    <rect key="frame" x="0.0" y="0.0" width="74.666666666666671" height="37.333333333333336"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="374" height="37.333333333333336"/>
                                                     <subviews>
                                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qVT-xd-8Kw" userLabel="Pin Container">
                                                             <rect key="frame" x="0.0" y="0.0" width="10" height="37.333333333333336"/>
@@ -57,7 +57,7 @@
                                                             </constraints>
                                                         </view>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BDr-JF-r6v">
-                                                            <rect key="frame" x="15.999999999999996" y="0.0" width="58.666666666666657" height="36"/>
+                                                            <rect key="frame" x="16" y="0.0" width="358" height="36"/>
                                                             <string key="text">Location
 Location</string>
                                                             <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -97,7 +97,7 @@ Location</string>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="kUk-UX-nWh" firstAttribute="width" secondItem="6up-b5-y8k" secondAttribute="width" id="P9J-lm-1cd"/>
-                                                <constraint firstItem="Raf-Gt-gj1" firstAttribute="width" secondItem="6up-b5-y8k" secondAttribute="width" multiplier="0.199643" id="gI4-he-9sL"/>
+                                                <constraint firstItem="Raf-Gt-gj1" firstAttribute="width" secondItem="6up-b5-y8k" secondAttribute="width" id="gI4-he-9sL"/>
                                             </constraints>
                                         </stackView>
                                     </subviews>
@@ -108,6 +108,12 @@ Location</string>
                                         <constraint firstAttribute="trailingMargin" secondItem="6up-b5-y8k" secondAttribute="trailing" id="gaU-9P-WJo"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="PHe-eG-Eyy" id="ZdD-dd-cQT"/>
+                                    <outlet property="feedImageView" destination="BsN-TB-6HM" id="qR1-VE-s1v"/>
+                                    <outlet property="locationContainer" destination="Raf-Gt-gj1" id="Ia9-C2-VkG"/>
+                                    <outlet property="locationLabel" destination="BDr-JF-r6v" id="1Ib-Ei-lJD"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
