@@ -56,6 +56,7 @@
 		939B0FDD2BCAD7C500315B48 /* UIView+Shimmering.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B0FDC2BCAD7C500315B48 /* UIView+Shimmering.swift */; };
 		939B0FE02BCB07C600315B48 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B0FDF2BCB07C600315B48 /* UIImage+TestHelpers.swift */; };
 		939B0FE22BCB082D00315B48 /* UIRefreshControl+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B0FE12BCB082D00315B48 /* UIRefreshControl+TestHelpers.swift */; };
+		939B0FE42BCB088700315B48 /* UIButton+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 939B0FE32BCB088700315B48 /* UIButton+TestHelpers.swift */; };
 		93AD46352BB6339700311D17 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93159C402B7C55C400851AA2 /* XCTestCase+MemoryLeakTracking.swift */; };
 		93AD46372BBB9A9D00311D17 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD46362BBB9A9D00311D17 /* FeedViewController.swift */; };
 /* End PBXBuildFile section */
@@ -163,6 +164,7 @@
 		939B0FDC2BCAD7C500315B48 /* UIView+Shimmering.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Shimmering.swift"; sourceTree = "<group>"; };
 		939B0FDF2BCB07C600315B48 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 		939B0FE12BCB082D00315B48 /* UIRefreshControl+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIRefreshControl+TestHelpers.swift"; sourceTree = "<group>"; };
+		939B0FE32BCB088700315B48 /* UIButton+TestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+TestHelpers.swift"; sourceTree = "<group>"; };
 		93AD46362BBB9A9D00311D17 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -422,6 +424,7 @@
 			children = (
 				939B0FDF2BCB07C600315B48 /* UIImage+TestHelpers.swift */,
 				939B0FE12BCB082D00315B48 /* UIRefreshControl+TestHelpers.swift */,
+				939B0FE32BCB088700315B48 /* UIButton+TestHelpers.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -681,6 +684,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9357E1442BB07BD6007F974C /* FeedViewControllerTests.swift in Sources */,
+				939B0FE42BCB088700315B48 /* UIButton+TestHelpers.swift in Sources */,
 				939B0FE22BCB082D00315B48 /* UIRefreshControl+TestHelpers.swift in Sources */,
 				93AD46352BB6339700311D17 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				939B0FE02BCB07C600315B48 /* UIImage+TestHelpers.swift in Sources */,
