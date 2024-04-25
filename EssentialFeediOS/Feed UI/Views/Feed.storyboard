@@ -79,6 +79,9 @@ Location</string>
                                                                 <fontDescription key="titleFontDescription" type="system" pointSize="60"/>
                                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             </buttonConfiguration>
+                                                            <connections>
+                                                                <action selector="retryButtonTapped" destination="jmL-Ku-sl8" eventType="touchUpInside" id="nGk-Xw-JCZ"/>
+                                                            </connections>
                                                         </button>
                                                     </subviews>
                                                     <color key="backgroundColor" red="0.89019607840000003" green="0.89019607840000003" blue="0.89019607840000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -120,6 +123,14 @@ Location</string>
                                         <constraint firstItem="q1k-Jj-FFI" firstAttribute="top" secondItem="xlf-lM-JKM" secondAttribute="topMargin" priority="999" constant="6" id="mhH-M1-iX6"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionLabel" destination="6XE-nv-mYa" id="R3B-ve-2eZ"/>
+                                    <outlet property="feedImageContainer" destination="zp3-v1-9yY" id="RRa-Dp-HG1"/>
+                                    <outlet property="feedImageRetryButton" destination="xdg-4c-W1T" id="weu-Qv-mK8"/>
+                                    <outlet property="feedImageView" destination="mxh-OU-yE6" id="Y6r-K7-JYK"/>
+                                    <outlet property="locationContainer" destination="JFd-gf-g4c" id="puD-mg-oje"/>
+                                    <outlet property="locationLabel" destination="air-N0-Yyh" id="2Nf-cJ-i0y"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
