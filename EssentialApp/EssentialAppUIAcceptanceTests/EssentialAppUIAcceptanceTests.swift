@@ -35,4 +35,13 @@ final class EssentialAppUIAcceptanceTests: XCTestCase {
         let cachedFirstImage = offlineApp.images.matching(identifier: "feed-image-view").firstMatch
         XCTAssertTrue(cachedFirstImage.exists) // <- does not pass
     }
+    
+    func test_onLaunch_displaysEmptyFeedWhenCustomerHasNoConnectivityAndNoCache() {
+        let app = XCUIApplication()
+        app.launchArguments = ["-reset", "-connectivity", "offline"]
+        app.launch()
+        
+        let feedCells = app.cells.matching(identifier: "feed-image-cell")
+        XCTAssertEqual(feedCells.count, 0) // <- only passes because, as the other tests show, we are never getting the feed with these UI tests (even though visually we can see them when the test runs)
+    }
 }
