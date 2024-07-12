@@ -48,7 +48,6 @@
 		93D765BE2BF959640013A518 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D765BD2BF959640013A518 /* FeedImageDataLoaderWithFallbackComposite.swift */; };
 		93D765C12BF95A060013A518 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D765C02BF95A060013A518 /* XCTestCase+MemoryLeakTracking.swift */; };
 		93D765C32BF95A810013A518 /* SharedTestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D765C22BF95A810013A518 /* SharedTestHelpers.swift */; };
-		93FF5E2E2C0D413400E5F255 /* DebuggingSceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93FF5E2D2C0D413400E5F255 /* DebuggingSceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,7 +118,6 @@
 		93D765BD2BF959640013A518 /* FeedImageDataLoaderWithFallbackComposite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageDataLoaderWithFallbackComposite.swift; sourceTree = "<group>"; };
 		93D765C02BF95A060013A518 /* XCTestCase+MemoryLeakTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+MemoryLeakTracking.swift"; sourceTree = "<group>"; };
 		93D765C22BF95A810013A518 /* SharedTestHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedTestHelpers.swift; sourceTree = "<group>"; };
-		93FF5E2D2C0D413400E5F255 /* DebuggingSceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebuggingSceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,7 +173,6 @@
 			children = (
 				9339C65A2BF18C43003E3DCB /* AppDelegate.swift */,
 				9339C65C2BF18C43003E3DCB /* SceneDelegate.swift */,
-				93FF5E2D2C0D413400E5F255 /* DebuggingSceneDelegate.swift */,
 				93D765B92BF94CA60013A518 /* FeedLoaderWithFallbackComposite.swift */,
 				937509552BFEB40A00446F3D /* FeedLoaderCacheDecorator.swift */,
 				93D765BD2BF959640013A518 /* FeedImageDataLoaderWithFallbackComposite.swift */,
@@ -343,7 +340,6 @@
 				937509602BFEBF1400446F3D /* FeedImageDataLoaderCacheDecorator.swift in Sources */,
 				9318AF562C40AA5F00425327 /* FeedLoaderPresenterAdapter.swift in Sources */,
 				937509562BFEB40A00446F3D /* FeedLoaderCacheDecorator.swift in Sources */,
-				93FF5E2E2C0D413400E5F255 /* DebuggingSceneDelegate.swift in Sources */,
 				9318AF522C40AA5F00425327 /* WeakRefVirtualProxy.swift in Sources */,
 				9318AF542C40AA5F00425327 /* FeedImageDataLoaderPresentationAdapter.swift in Sources */,
 				9339C65D2BF18C43003E3DCB /* SceneDelegate.swift in Sources */,
