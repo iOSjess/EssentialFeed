@@ -21,7 +21,7 @@
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMV-mY-q0F">
-                                    <rect key="frame" x="0.0" y="0.0" width="393" height="34"/>
+                                    <rect key="frame" x="0.0" y="8" width="393" height="18"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <nil key="highlightedColor"/>
@@ -31,9 +31,9 @@
                             <gestureRecognizers/>
                             <constraints>
                                 <constraint firstItem="JMV-mY-q0F" firstAttribute="leading" secondItem="xJU-Uw-e6O" secondAttribute="leading" id="NeZ-Xk-m5B"/>
-                                <constraint firstAttribute="bottom" secondItem="JMV-mY-q0F" secondAttribute="bottom" id="ZBa-qo-IVw"/>
+                                <constraint firstAttribute="bottom" secondItem="JMV-mY-q0F" secondAttribute="bottom" constant="8" id="ZBa-qo-IVw"/>
                                 <constraint firstAttribute="trailing" secondItem="JMV-mY-q0F" secondAttribute="trailing" id="q0u-oP-3sp"/>
-                                <constraint firstItem="JMV-mY-q0F" firstAttribute="top" secondItem="xJU-Uw-e6O" secondAttribute="top" id="ySw-7i-Hgl"/>
+                                <constraint firstItem="JMV-mY-q0F" firstAttribute="top" secondItem="xJU-Uw-e6O" secondAttribute="top" constant="8" id="ySw-7i-Hgl"/>
                             </constraints>
                             <connections>
                                 <outlet property="label" destination="JMV-mY-q0F" id="kgA-of-Ede"/>
