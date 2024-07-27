@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		930546272BF18EBF0085C713 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930546252BF18EBF0085C713 /* EssentialFeed.framework */; };
-		930546282BF18EBF0085C713 /* EssentialFeed.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 930546252BF18EBF0085C713 /* EssentialFeed.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		930546292BF18EBF0085C713 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930546262BF18EBF0085C713 /* EssentialFeediOS.framework */; };
-		9305462A2BF18EBF0085C713 /* EssentialFeediOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 930546262BF18EBF0085C713 /* EssentialFeediOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		9318AF4A2C4066F000425327 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318AF492C4066F000425327 /* SceneDelegateTests.swift */; };
 		9318AF512C40AA5F00425327 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318AF4D2C40AA5E00425327 /* MainQueueDispatchDecorator.swift */; };
 		9318AF522C40AA5F00425327 /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318AF4B2C40AA5E00425327 /* WeakRefVirtualProxy.swift */; };
@@ -61,21 +59,6 @@
 			remoteInfo = EssentialApp;
 		};
 /* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		9305462B2BF18EBF0085C713 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				930546282BF18EBF0085C713 /* EssentialFeed.framework in Embed Frameworks */,
-				9305462A2BF18EBF0085C713 /* EssentialFeediOS.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		930546252BF18EBF0085C713 /* EssentialFeed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = EssentialFeed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -244,7 +227,6 @@
 				9339C6532BF18C43003E3DCB /* Sources */,
 				9339C6542BF18C43003E3DCB /* Frameworks */,
 				9339C6552BF18C43003E3DCB /* Resources */,
-				9305462B2BF18EBF0085C713 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -545,9 +527,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosjess.EssentialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -572,9 +556,11 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosjess.EssentialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
