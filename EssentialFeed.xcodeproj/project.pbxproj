@@ -90,6 +90,7 @@
 		93AD46352BB6339700311D17 /* XCTestCase+MemoryLeakTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93159C402B7C55C400851AA2 /* XCTestCase+MemoryLeakTracking.swift */; };
 		93AD46372BBB9A9D00311D17 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD46362BBB9A9D00311D17 /* FeedViewController.swift */; };
 		93B8E8302C5535A30082B421 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8E82F2C5535A30082B421 /* UIImage+TestHelpers.swift */; };
+		93B8E8322C55384D0082B421 /* UITableView+HeaderSizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8E8312C55384D0082B421 /* UITableView+HeaderSizing.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,6 +233,7 @@
 		939B0FFC2BCB1F9E00315B48 /* FeedImageCellController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedImageCellController.swift; sourceTree = "<group>"; };
 		93AD46362BBB9A9D00311D17 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		93B8E82F2C5535A30082B421 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
+		93B8E8312C55384D0082B421 /* UITableView+HeaderSizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+HeaderSizing.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -442,6 +444,7 @@
 				9320EA072BDB10220054F181 /* UITableView+Dequeueing.swift */,
 				9320EA092BDB11B40054F181 /* UIImageView+Animations.swift */,
 				938B5B6D2BDEFD7D007A3808 /* UIRefreshControl+Helpers.swift */,
+				93B8E8312C55384D0082B421 /* UITableView+HeaderSizing.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -840,6 +843,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				93B8E8322C55384D0082B421 /* UITableView+HeaderSizing.swift in Sources */,
 				938B5B692BDE9D58007A3808 /* ErrorView.swift in Sources */,
 				938B5B6E2BDEFD7D007A3808 /* UIRefreshControl+Helpers.swift in Sources */,
 				9320EA082BDB10220054F181 /* UITableView+Dequeueing.swift in Sources */,
