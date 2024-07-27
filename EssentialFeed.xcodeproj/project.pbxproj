@@ -91,6 +91,7 @@
 		93AD46372BBB9A9D00311D17 /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93AD46362BBB9A9D00311D17 /* FeedViewController.swift */; };
 		93B8E8302C5535A30082B421 /* UIImage+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8E82F2C5535A30082B421 /* UIImage+TestHelpers.swift */; };
 		93B8E8322C55384D0082B421 /* UITableView+HeaderSizing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8E8312C55384D0082B421 /* UITableView+HeaderSizing.swift */; };
+		93B8E8342C5546880082B421 /* UIViewController+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8E8332C5546880082B421 /* UIViewController+Snapshot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -234,6 +235,7 @@
 		93AD46362BBB9A9D00311D17 /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		93B8E82F2C5535A30082B421 /* UIImage+TestHelpers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+TestHelpers.swift"; sourceTree = "<group>"; };
 		93B8E8312C55384D0082B421 /* UITableView+HeaderSizing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+HeaderSizing.swift"; sourceTree = "<group>"; };
+		93B8E8332C5546880082B421 /* UIViewController+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Snapshot.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -590,6 +592,7 @@
 			isa = PBXGroup;
 			children = (
 				93B8E82F2C5535A30082B421 /* UIImage+TestHelpers.swift */,
+				93B8E8332C5546880082B421 /* UIViewController+Snapshot.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -861,6 +864,7 @@
 			files = (
 				93AD46352BB6339700311D17 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				9318AF722C49F94500425327 /* FeedSnapshotTests.swift in Sources */,
+				93B8E8342C5546880082B421 /* UIViewController+Snapshot.swift in Sources */,
 				93B8E8302C5535A30082B421 /* UIImage+TestHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
