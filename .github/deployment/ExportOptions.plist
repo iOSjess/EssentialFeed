@@ -8,7 +8,7 @@
 	<string>app-store-connect</string>
 	<key>provisioningProfiles</key>
 	<dict>
-		<key>com.essentialdeveloper.EssentialApp</key>
+		<key>com.iosjess.EssentialApp</key>
 		<string>EssentialApp_Prod_Profile</string>
 	</dict>
 	<key>signingCertificate</key>
