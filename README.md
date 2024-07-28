@@ -1,6 +1,8 @@
 # Essential App Case Study
 
-[![CI-macOS](https://github.com/iOSjess/EssentialFeed/actions/workflows/CI.yml/badge.svg)](https://github.com/iOSjess/EssentialFeed/actions/workflows/CI.yml)
+![](https://github.com/essentialdevelopercom/essential-feed-case-study/workflows/CI-iOS/badge.svg)
+
+![](https://github.com/essentialdevelopercom/essential-feed-case-study/workflows/CI-macOS/badge.svg)
 
 ## Image Feed Feature Specs
 
