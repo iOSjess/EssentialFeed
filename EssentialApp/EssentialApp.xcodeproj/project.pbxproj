@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		930546272BF18EBF0085C713 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930546252BF18EBF0085C713 /* EssentialFeed.framework */; };
-		930546292BF18EBF0085C713 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930546262BF18EBF0085C713 /* EssentialFeediOS.framework */; };
 		9318AF4A2C4066F000425327 /* SceneDelegateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318AF492C4066F000425327 /* SceneDelegateTests.swift */; };
 		9318AF512C40AA5F00425327 /* MainQueueDispatchDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318AF4D2C40AA5E00425327 /* MainQueueDispatchDecorator.swift */; };
 		9318AF522C40AA5F00425327 /* WeakRefVirtualProxy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9318AF4B2C40AA5E00425327 /* WeakRefVirtualProxy.swift */; };
@@ -43,6 +41,8 @@
 		937509602BFEBF1400446F3D /* FeedImageDataLoaderCacheDecorator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9375095F2BFEBF1400446F3D /* FeedImageDataLoaderCacheDecorator.swift */; };
 		9386E6192BF2EAB80022DE01 /* FeedLoaderWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9386E6182BF2EAB80022DE01 /* FeedLoaderWithFallbackCompositeTests.swift */; };
 		93B8E83A2C55680E0082B421 /* UIView+TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8E8392C55680E0082B421 /* UIView+TestHelpers.swift */; };
+		93B8E83B2C55DCCB0082B421 /* EssentialFeed.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930546252BF18EBF0085C713 /* EssentialFeed.framework */; };
+		93B8E83E2C55DCCD0082B421 /* EssentialFeediOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 930546262BF18EBF0085C713 /* EssentialFeediOS.framework */; };
 		93D765BA2BF94CA60013A518 /* FeedLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D765B92BF94CA60013A518 /* FeedLoaderWithFallbackComposite.swift */; };
 		93D765BC2BF94D4F0013A518 /* FeedImageDataLoaderWithFallbackCompositeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D765BB2BF94D4F0013A518 /* FeedImageDataLoaderWithFallbackCompositeTests.swift */; };
 		93D765BE2BF959640013A518 /* FeedImageDataLoaderWithFallbackComposite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93D765BD2BF959640013A518 /* FeedImageDataLoaderWithFallbackComposite.swift */; };
@@ -112,8 +112,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				930546272BF18EBF0085C713 /* EssentialFeed.framework in Frameworks */,
-				930546292BF18EBF0085C713 /* EssentialFeediOS.framework in Frameworks */,
+				93B8E83B2C55DCCB0082B421 /* EssentialFeed.framework in Frameworks */,
+				93B8E83E2C55DCCD0082B421 /* EssentialFeediOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,9 +511,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PV8C8697QD;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = PV8C8697QD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -527,6 +529,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosjess.EssentialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "EssentialApp Dev Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -540,9 +544,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = PV8C8697QD;
+				DEVELOPMENT_TEAM = "";
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = PV8C8697QD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = EssentialApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -556,6 +562,8 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.iosjess.EssentialApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "EssentialApp Dev Profile";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
