@@ -20,12 +20,12 @@ jobs:
 
     - name: Install provisioning profile
       run: |
-        gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.GPG_PASSPHRASE }}" --output .github/deployment/profile.mobileprovision .github/deployment/EssentialApp_Dev_Profile.mobileprovision.gpg
+        gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.GPG_PASSPHRASE }}" --output .github/deployment/profile.mobileprovision .github/deployment/EssentialApp_Prod_Profile.mobileprovision.gpg
         mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
         cp .github/deployment/profile.mobileprovision ~/Library/MobileDevice/Provisioning\ Profiles/
     - name: Install keychain certificate
       run: |
-        gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.GPG_PASSPHRASE }}" --output .github/deployment/certificate.p12 .github/deployment/EssentialApp_Dev_Cert.p12.gpg
+        gpg --quiet --batch --yes --decrypt --passphrase="${{ secrets.GPG_PASSPHRASE }}" --output .github/deployment/certificate.p12 .github/deployment/EssentialApp_Prod_Cert.p12.gpg
         security create-keychain -p "" build.keychain
         security import .github/deployment/certificate.p12 -t agg -k ~/Library/Keychains/build.keychain -P "${{ secrets.CERTIFICATE_PASSWORD }}" -A
         security list-keychains -s ~/Library/Keychains/build.keychain
