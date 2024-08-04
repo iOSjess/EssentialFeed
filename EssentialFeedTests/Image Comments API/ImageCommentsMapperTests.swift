@@ -1,5 +1,5 @@
 //
-//  LoadImageCommentsFromRemoteUseCaseTests.swift
+//  ImageCommentsMapperTests.swift
 //  EssentialFeedTests
 //
 //  Created by Jessie Elliott on 8/3/24.
@@ -15,11 +15,10 @@ final class LoadImageCommentsFromRemoteUseCaseTests: XCTestCase {
         
         let samples = [199, 150, 300, 400, 500]
         
-        samples.enumerated().forEach { index, code in
-            expect(sut, toCompleteWith: failure(.invalidData), when: {
-                let json = makeItemsJSON([])
-                client.complete(withStatusCode: code, data: json, at: index)
-            })
+        try samples.forEach { code in
+            XCTAssertThrowsError(
+                try ImageCommentsMapper.map(json, from: HTTPURLResponse(statusCode: code))
+            )
         }
     }
     
@@ -88,11 +87,6 @@ final class LoadImageCommentsFromRemoteUseCaseTests: XCTestCase {
     
     private func failure(_ error: RemoteImageCommentsLoader.Error) -> RemoteImageCommentsLoader.Result {
         return .failure(error)
-    }
-    
-    private func makeItemsJSON(_ items: [[String: Any]]) -> Data {
-        let json = ["items": items]
-        return try! JSONSerialization.data(withJSONObject: json)
     }
     
     private func makeItem(id: UUID, message: String, createdAt: (date: Date, iso8601String: String), username: String) -> (model: ImageComment, json: [String: Any]) {

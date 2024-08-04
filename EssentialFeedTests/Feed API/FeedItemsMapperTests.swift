@@ -61,11 +61,6 @@ final class FeedItemsMapperTests: XCTestCase {
         return .failure(error)
     }
     
-    private func makeItemsJSON(_ items: [[String: Any]]) -> Data {
-        let json = ["items": items]
-        return try! JSONSerialization.data(withJSONObject: json)
-    }
-    
     private func makeItem(id: UUID, description: String? = nil, location: String? = nil, imageURL: URL) -> (model: FeedImage, json: [String: Any]) {
         let item = FeedImage(id: id, description: description, location: location, url: imageURL)
         
@@ -77,11 +72,5 @@ final class FeedItemsMapperTests: XCTestCase {
         ].compactMapValues { $0 }
         
         return (item, json)
-    }
-}
-
-private extension HTTPURLResponse {
-    convenience init(statusCode: Int) {
-        self.init(url: anyURL(), statusCode: statusCode, httpVersion: nil, headerFields: nil)!
     }
 }
