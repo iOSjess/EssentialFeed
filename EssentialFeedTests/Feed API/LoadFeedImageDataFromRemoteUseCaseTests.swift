@@ -18,31 +18,7 @@ class LoadFeedImageDataFromRemoteUseCaseTests: XCTestCase {
     
     func test_loadImageDataFromURL_requestsDataFromURL() {
         let url = URL(string: "https://a-given-url.com")!
-        let (sut, client) 
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        = makeSUT(url: url)
+        let (sut, client) = makeSUT(url: url)
         
         _ = sut.loadImageData(from: url) { _ in }
         
