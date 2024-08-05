@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9313B8CC2BECF148000A204F /* HTTPClientSpy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313B8CB2BECF148000A204F /* HTTPClientSpy.swift */; };
 		9313B8D32BECFA60000A204F /* HTTPURLResponse+StatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313B8D02BECF986000A204F /* HTTPURLResponse+StatusCode.swift */; };
 		9313B8D52BECFAE4000A204F /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313B8D42BECFAE4000A204F /* URLProtocolStub.swift */; };
 		9313B8D72BED9F1F000A204F /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9313B8D62BED9F1F000A204F /* LoadFeedImageDataFromCacheUseCaseTests.swift */; };
@@ -133,7 +132,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		9313B8CB2BECF148000A204F /* HTTPClientSpy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClientSpy.swift; sourceTree = "<group>"; };
 		9313B8CF2BECF72C000A204F /* EssentialFeedAPIEndToEndTests.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = EssentialFeedAPIEndToEndTests.xctestplan; path = EssentialFeedAPIEndToEndTests/EssentialFeedAPIEndToEndTests.xctestplan; sourceTree = SOURCE_ROOT; };
 		9313B8D02BECF986000A204F /* HTTPURLResponse+StatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HTTPURLResponse+StatusCode.swift"; sourceTree = "<group>"; };
 		9313B8D42BECFAE4000A204F /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
@@ -385,7 +383,6 @@
 			children = (
 				93159C442B8054B000851AA2 /* EssentialFeed.xctestplan */,
 				93159C3F2B7C558000851AA2 /* Helpers */,
-				9383DD322C5EBF96000F99FD /* Shared API */,
 				9383DD342C5EBFCE000F99FD /* Shared API Infra */,
 				9359F6732B782B900019DE0B /* Feed API */,
 				9383DD362C5EC084000F99FD /* Image Comments API */,
@@ -447,22 +444,6 @@
 				93159C422B7C67E300851AA2 /* URLSessionHTTPClient.swift */,
 			);
 			path = "Shared API Infra";
-			sourceTree = "<group>";
-		};
-		9383DD322C5EBF96000F99FD /* Shared API */ = {
-			isa = PBXGroup;
-			children = (
-				9383DD332C5EBFBD000F99FD /* Helpers */,
-			);
-			path = "Shared API";
-			sourceTree = "<group>";
-		};
-		9383DD332C5EBFBD000F99FD /* Helpers */ = {
-			isa = PBXGroup;
-			children = (
-				9313B8CB2BECF148000A204F /* HTTPClientSpy.swift */,
-			);
-			path = Helpers;
 			sourceTree = "<group>";
 		};
 		9383DD342C5EBFCE000F99FD /* Shared API Infra */ = {
@@ -975,7 +956,6 @@
 				938B5B872BDF125D007A3808 /* FeedLocalizationTests.swift in Sources */,
 				93159C412B7C55C400851AA2 /* XCTestCase+MemoryLeakTracking.swift in Sources */,
 				9313B8D72BED9F1F000A204F /* LoadFeedImageDataFromCacheUseCaseTests.swift in Sources */,
-				9313B8CC2BECF148000A204F /* HTTPClientSpy.swift in Sources */,
 				9383DD282C5EAE8C000F99FD /* ImageCommentsMapperTests.swift in Sources */,
 				938F60E72B93D3C6005471FF /* SharedTestHelpers.swift in Sources */,
 				9359F6752B7990320019DE0B /* URLSessionHTTPClientTests.swift in Sources */,
