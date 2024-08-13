@@ -93,6 +93,8 @@
 		93B8E8362C5546E80082B421 /* XCTestCase+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93B8E8352C5546E80082B421 /* XCTestCase+Snapshot.swift */; };
 		93F0F73F2C6ACCAB005D2E80 /* LoadResourcePresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0F73E2C6ACCAB005D2E80 /* LoadResourcePresenterTests.swift */; };
 		93F0F7422C6ACD5E005D2E80 /* LoadResourcePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0F7412C6ACD5E005D2E80 /* LoadResourcePresenter.swift */; };
+		93F0F7452C6AD86A005D2E80 /* Shared.strings in Resources */ = {isa = PBXBuildFile; fileRef = 93F0F7432C6AD86A005D2E80 /* Shared.strings */; };
+		93F0F7472C6ADA67005D2E80 /* SharedLocalizationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F0F7462C6ADA67005D2E80 /* SharedLocalizationTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -225,6 +227,10 @@
 		93B8E8352C5546E80082B421 /* XCTestCase+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+Snapshot.swift"; sourceTree = "<group>"; };
 		93F0F73E2C6ACCAB005D2E80 /* LoadResourcePresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenterTests.swift; sourceTree = "<group>"; };
 		93F0F7412C6ACD5E005D2E80 /* LoadResourcePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadResourcePresenter.swift; sourceTree = "<group>"; };
+		93F0F7442C6AD86A005D2E80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Shared.strings; sourceTree = "<group>"; };
+		93F0F7462C6ADA67005D2E80 /* SharedLocalizationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedLocalizationTests.swift; sourceTree = "<group>"; };
+		93F0F7482C6ADB1D005D2E80 /* el */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = el; path = el.lproj/Shared.strings; sourceTree = "<group>"; };
+		93F0F7492C6ADB1F005D2E80 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/Shared.strings"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -640,6 +646,7 @@
 			isa = PBXGroup;
 			children = (
 				93F0F73E2C6ACCAB005D2E80 /* LoadResourcePresenterTests.swift */,
+				93F0F7462C6ADA67005D2E80 /* SharedLocalizationTests.swift */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -648,6 +655,7 @@
 			isa = PBXGroup;
 			children = (
 				93F0F7412C6ACD5E005D2E80 /* LoadResourcePresenter.swift */,
+				93F0F7432C6AD86A005D2E80 /* Shared.strings */,
 			);
 			path = "Shared Presentation";
 			sourceTree = "<group>";
@@ -867,6 +875,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				938B5B7F2BDF0FD3007A3808 /* Feed.strings in Resources */,
+				93F0F7452C6AD86A005D2E80 /* Shared.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -983,6 +992,7 @@
 				938F60E72B93D3C6005471FF /* SharedTestHelpers.swift in Sources */,
 				9359F6752B7990320019DE0B /* URLSessionHTTPClientTests.swift in Sources */,
 				938F60D32B897F4B005471FF /* CacheFeedUseCaseTests.swift in Sources */,
+				93F0F7472C6ADA67005D2E80 /* SharedLocalizationTests.swift in Sources */,
 				9339C6442BF102D2003E3DCB /* FeedImageDataStoreSpy.swift in Sources */,
 				9339C6482BF109C2003E3DCB /* CoreDataFeedImageDataStoreTests.swift in Sources */,
 				938F60E52B93D324005471FF /* FeedCacheTestHelpers.swift in Sources */,
@@ -1047,6 +1057,16 @@
 				938B5B7B2BDF0D79007A3808 /* el */,
 			);
 			name = Feed.strings;
+			sourceTree = "<group>";
+		};
+		93F0F7432C6AD86A005D2E80 /* Shared.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				93F0F7442C6AD86A005D2E80 /* en */,
+				93F0F7482C6ADB1D005D2E80 /* el */,
+				93F0F7492C6ADB1F005D2E80 /* pt-BR */,
+			);
+			name = Shared.strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
