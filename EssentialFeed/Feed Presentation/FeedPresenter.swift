@@ -36,6 +36,10 @@ public final class FeedPresenter {
         self.errorView = errorView
     }
     
+    public static func map(_ feed: [FeedImage]) -> FeedViewModel {
+        FeedViewModel(feed: feed)
+    }
+    
     // data in -> creates view models -> data out to the UI
 
     // Void -> creates view models -> sends to the UI
