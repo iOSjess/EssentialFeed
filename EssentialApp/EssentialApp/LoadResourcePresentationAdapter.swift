@@ -1,5 +1,5 @@
 //
-//  LoadResourcePresenterAdapter.swift
+//  LoadResourcePresentationAdapter.swift
 //  EssentialFeediOS
 //
 //  Created by Jessie Elliott on 4/27/24.
@@ -9,7 +9,7 @@ import Combine
 import EssentialFeed
 import EssentialFeediOS
 
-final class LoadResourcePresenterAdapter<Resource, View: ResourceView> {
+final class LoadResourcePresentationAdapter<Resource, View: ResourceView> {
     private let loader: () -> AnyPublisher<Resource, Error>
     private var cancellable: Cancellable?
     var presenter: LoadResourcePresenter<Resource, View>?
@@ -37,13 +37,13 @@ final class LoadResourcePresenterAdapter<Resource, View: ResourceView> {
     }
 }
 
-extension LoadResourcePresenterAdapter: FeedViewControllerDelegate {
+extension LoadResourcePresentationAdapter: FeedViewControllerDelegate {
     func didRequestFeedRefresh() {
         loadResource()
     }
 }
 
-extension LoadResourcePresenterAdapter: FeedImageCellControllerDelegate {
+extension LoadResourcePresentationAdapter: FeedImageCellControllerDelegate {
     func didRequestImage() {
         loadResource()
     }
