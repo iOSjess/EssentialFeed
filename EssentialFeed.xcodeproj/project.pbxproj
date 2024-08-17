@@ -361,6 +361,7 @@
 		9357E12E2BAF5EF1007F974C /* EssentialFeediOS */ = {
 			isa = PBXGroup;
 			children = (
+				938A7BFE2C712CD200B2498D /* Shared UI */,
 				931D74602C71235F007007FC /* Image Comments UI */,
 				939B0FE82BCB0A1700315B48 /* Feed UI */,
 			);
@@ -551,14 +552,47 @@
 			path = "EssentialFeediOSTests/Feed UI/snapshots";
 			sourceTree = SOURCE_ROOT;
 		};
+		938A7BFE2C712CD200B2498D /* Shared UI */ = {
+			isa = PBXGroup;
+			children = (
+				938A7BFF2C712CDF00B2498D /* Controllers */,
+				938A7C002C712CE900B2498D /* Views */,
+			);
+			path = "Shared UI";
+			sourceTree = "<group>";
+		};
+		938A7BFF2C712CDF00B2498D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93AD46362BBB9A9D00311D17 /* ListViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		938A7C002C712CE900B2498D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				938A7C012C712D0500B2498D /* Helpers */,
+				938B5B682BDE9D58007A3808 /* ErrorView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		938A7C012C712D0500B2498D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				938B5B6D2BDEFD7D007A3808 /* UIRefreshControl+Helpers.swift */,
+				9320EA072BDB10220054F181 /* UITableView+Dequeueing.swift */,
+				93B8E8312C55384D0082B421 /* UITableView+HeaderSizing.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		938B5B6A2BDEFCC1007A3808 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
 				939B0FDC2BCAD7C500315B48 /* UIView+Shimmering.swift */,
-				9320EA072BDB10220054F181 /* UITableView+Dequeueing.swift */,
 				9320EA092BDB11B40054F181 /* UIImageView+Animations.swift */,
-				938B5B6D2BDEFD7D007A3808 /* UIRefreshControl+Helpers.swift */,
-				93B8E8312C55384D0082B421 /* UITableView+HeaderSizing.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -680,7 +714,6 @@
 		939B0FE92BCB0A2200315B48 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				93AD46362BBB9A9D00311D17 /* ListViewController.swift */,
 				939B0FFC2BCB1F9E00315B48 /* FeedImageCellController.swift */,
 			);
 			path = Controllers;
@@ -691,7 +724,6 @@
 			children = (
 				938B5B6A2BDEFCC1007A3808 /* Helpers */,
 				939B0FDA2BC8AD1800315B48 /* FeedImageCell.swift */,
-				938B5B682BDE9D58007A3808 /* ErrorView.swift */,
 				9320EA032BD925330054F181 /* Feed.storyboard */,
 				9320EA052BD925C00054F181 /* Feed.xcassets */,
 			);
