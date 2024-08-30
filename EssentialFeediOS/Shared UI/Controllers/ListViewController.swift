@@ -54,13 +54,6 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
         tableView.sizeTableHeaderToFit()
     }
     
-    // Updates since iOS 15 seem to have fixed this issue
-//    public override func traitCollectionDidChange(_ previous: UITraitCollection?) {
-//         if previous?.preferredContentSizeCategory != traitCollection.preferredContentSizeCategory {
-//             tableView.reloadData()
-//         }
-//     }
-    
     @IBAction private func refresh() {
         onRefresh?()
     }
