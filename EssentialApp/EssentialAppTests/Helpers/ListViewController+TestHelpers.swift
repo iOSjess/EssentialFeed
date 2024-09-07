@@ -1,5 +1,5 @@
 //
-//  FeedViewControllers+TestHelpers.swift
+//  ListViewController+TestHelpers.swift
 //  EssentialFeediOSTests
 //
 //  Created by Jessie Elliott on 4/13/24.
