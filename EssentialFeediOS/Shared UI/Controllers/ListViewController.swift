@@ -26,8 +26,8 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
     public override func viewDidLoad() {
         super.viewDidLoad()
         
-
         configureTableView()
+        configureTraitCollectionObservers()
         
         onViewIsAppearing = { vc in
             vc.onViewIsAppearing = nil
@@ -45,6 +45,14 @@ public final class ListViewController: UITableViewController, UITableViewDataSou
             self?.tableView.beginUpdates()
             self?.tableView.sizeTableHeaderToFit()
             self?.tableView.endUpdates()
+        }
+    }
+    
+    private func configureTraitCollectionObservers() {
+        registerForTraitChanges(
+            [UITraitPreferredContentSizeCategory.self]
+        ) { (self: Self, previous: UITraitCollection) in
+            self.tableView.reloadData()
         }
     }
     
