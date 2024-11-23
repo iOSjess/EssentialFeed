@@ -135,6 +135,7 @@
 		93F33A222CF2598B00A317BB /* FEED_WITH_LOAD_MORE_ERROR_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = 93F33A1F2CF2598B00A317BB /* FEED_WITH_LOAD_MORE_ERROR_dark.png */; };
 		93F33A232CF2598B00A317BB /* FEED_WITH_LOAD_MORE_ERROR_light.png in Resources */ = {isa = PBXBuildFile; fileRef = 93F33A202CF2598B00A317BB /* FEED_WITH_LOAD_MORE_ERROR_light.png */; };
 		93F33A242CF2598B00A317BB /* FEED_WITH_LOAD_MORE_ERROR_light_extraExtraExtraLarge.png in Resources */ = {isa = PBXBuildFile; fileRef = 93F33A212CF2598B00A317BB /* FEED_WITH_LOAD_MORE_ERROR_light_extraExtraExtraLarge.png */; };
+		93F33A262CF260F700A317BB /* Paginated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93F33A252CF260F700A317BB /* Paginated.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -313,6 +314,7 @@
 		93F33A1F2CF2598B00A317BB /* FEED_WITH_LOAD_MORE_ERROR_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_LOAD_MORE_ERROR_dark.png; sourceTree = "<group>"; };
 		93F33A202CF2598B00A317BB /* FEED_WITH_LOAD_MORE_ERROR_light.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_LOAD_MORE_ERROR_light.png; sourceTree = "<group>"; };
 		93F33A212CF2598B00A317BB /* FEED_WITH_LOAD_MORE_ERROR_light_extraExtraExtraLarge.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FEED_WITH_LOAD_MORE_ERROR_light_extraExtraExtraLarge.png; sourceTree = "<group>"; };
+		93F33A252CF260F700A317BB /* Paginated.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Paginated.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -545,6 +547,7 @@
 		9383DD302C5EBF44000F99FD /* Shared API */ = {
 			isa = PBXGroup;
 			children = (
+				93F33A252CF260F700A317BB /* Paginated.swift */,
 				9359F66F2B7821A50019DE0B /* HTTPClient.swift */,
 			);
 			path = "Shared API";
@@ -1227,6 +1230,7 @@
 				938B69532BE46D0F0046D8AF /* FeedImageDataLoader.swift in Sources */,
 				938F60FC2B9AB3DA005471FF /* CoreDataFeedStore.swift in Sources */,
 				9339C64D2BF1628D003E3DCB /* CoreDataFeedStore+FeedStore.swift in Sources */,
+				93F33A262CF260F700A317BB /* Paginated.swift in Sources */,
 				938F61092BA50E5F005471FF /* ManagedCache.swift in Sources */,
 				9359F6722B78221B0019DE0B /* FeedItemsMapper.swift in Sources */,
 				9339C6402BF0F8A4003E3DCB /* FeedImageDataStore.swift in Sources */,
